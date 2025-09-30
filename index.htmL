@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo das Rochas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #8B4513, #D2691E);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #8B4513;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #8B4513;
+            color: white;
+        }
+
+        .rocha-section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .rocha-section h2 {
+            color: #8B4513;
+            border-bottom: 3px solid #D2691E;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .exemplos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .exemplo-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #8B4513;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .exemplo-card h3 {
+            color: #D2691E;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 Mundo das Rochas</h1>
+            <p>Descubra a fascinante diversidade das rochas e minerais</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#magmaticas">Rochas Magmáticas</a></li>
+                <li><a href="#sedimentares">Rochas Sedimentares</a></li>
+                <li><a href="#igneas">Rochas Ígneas</a></li>
+                <li><a href="#minerais">Minerais</a></li>
+            </ul>
+        </nav>
+
+        <section id="magmaticas" class="rocha-section">
+            <h2>Rochas Magmáticas</h2>
+            <p>Formadas pelo resfriamento e solidificação do magma. Podem ser intrusivas (resfriamento lento no interior) ou extrusivas (resfriamento rápido na superfície).</p>
+            
+            <div class="exemplos">
+                <div class="exemplo-card">
+                    <h3>Basalto</h3>
+                    <p>Rocha vulcânica escura, de grão fino, muito comum na crosta terrestre.</p>
+                </div>
+                <div class="exemplo-card">
+                    <h3>Granito</h3>
+                    <p>Rocha intrusiva com quartzo, feldspato e mica, muito usada em construção.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sedimentares" class="rocha-section">
+            <h2>Rochas Sedimentares</h2>
+            <p>Formadas pela acumulação e compactação de sedimentos ao longo do tempo.</p>
+            
+            <div class="exemplos">
+                <div class="exemplo-card">
+                    <h3>Calcário</h3>
+                    <p>Formado por calcita, muito usado na indústria cimenteira.</p>
+                </div>
+                <div class="exemplo-card">
+                    <h3>Arenito</h3>
+                    <p>Composto por grãos de areia cimentados, comum em construções.</p>
+                </div>
+                <div class="exemplo-card">
+                    <h3>Sal-gema</h3>
+                    <p>Formado pela evaporação de água salgada, usado como sal de cozinha.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="igneas" class="rocha-section">
+            <h2>Rochas Ígneas</h2>
+            <p>Sinônimo de rochas magmáticas, formadas pela solidificação do material rochoso fundido.</p>
+            
+            <div class="exemplos">
+                <div class="exemplo-card">
+                    <h3>Obsidiana</h3>
+                    <p>Vidro vulcânico natural formado pelo rápido resfriamento da lava.</p>
+                </div>
+                <div class="exemplo-card">
+                    <h3>Púmice</h3>
+                    <p>Rocha vulcânica cheia de bolhas de ar, tão leve que flutua na água.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="minerais" class="rocha-section">
+            <h2>Minerais</h2>
+            <p>Substâncias naturais com composição química definida e estrutura cristalina.</p>
+            
+            <div class="exemplos">
+                <div class="exemplo-card">
+                    <h3>Quartzo Branco Leitoso</h3>
+                    <p>Variedade de quartzo com aparência branca e opaca devido a inclusões fluidas.</p>
+                </div>
+                <div class="exemplo-card">
+                    <h3>Mica</h3>
+                    <p>Mineral que se divide em lâminas finas e flexíveis.</p>
+                </div>
+                <div class="exemplo-card">
+                    <h3>Feldspato</h3>
+                    <p>Grupo de minerais mais abundante na crosta terrestre.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Trabalho sobre Rochas - Desenvolvido em dupla</p>
+            <p>Geografia - Estudo das Formações Rochosas</p>
+        </footer>
+    </div>
+</body>
+</html>
