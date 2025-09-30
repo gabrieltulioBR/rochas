@@ -38,14 +38,9 @@ Site educativo desenvolvido em HTML e CSS para apresentar os principais tipos de
 
 ## 👥 Desenvolvido por
 
-[Seu Nome] & [Nome do Seu Amigo]
+[gabriel tulio] & [guilherme torres]
 
 - **Disciplina**: Geografia/Geologia
 - **Instituição**: [Nome da sua escola/faculdade]
 - **Data**: [Data do trabalho]
 
-## 🚀 Como Executar
-
-1. Clone este repositório:
-```bash
-git clone https://github.com/[seu-usuario]/rochas.git
